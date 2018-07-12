@@ -31,7 +31,9 @@ namespace MVCWebDemo.ViewModels
                 DateCreated = DateTime.Now
             };
 
+            //Repo one
             RepositoryList.Add(repo);
+            //Repo two
             RepositoryList.Add(repo2);
         }
     }
