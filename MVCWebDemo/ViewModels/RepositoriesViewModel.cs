@@ -10,11 +10,13 @@ namespace MVCWebDemo.ViewModels
     {
         public List<RepositoryModel> RepositoryList = new List<RepositoryModel>();
 
+        //Constructor
         public RepositoriesViewModel()
         {
             AddRepos();
         }
 
+        //Adds the repos to the list.
         private void AddRepos()
         {
             var repo = new RepositoryModel
@@ -23,7 +25,14 @@ namespace MVCWebDemo.ViewModels
                 DateCreated = DateTime.Now
             };
 
+            var repo2 = new RepositoryModel
+            {
+                Name = "GitHubFlowDemo",
+                DateCreated = DateTime.Now
+            };
+
             RepositoryList.Add(repo);
+            RepositoryList.Add(repo2);
         }
     }
 }
