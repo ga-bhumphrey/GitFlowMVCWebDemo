@@ -11,8 +11,10 @@ namespace MVCWebDemo.Controllers
     {
         public IActionResult Index()
         {
+            //Creates instance of viewmodel.
             var viewModel = new RepositoriesViewModel();
 
+            //adds viewmodel to view.
             return View(viewModel);
         }
     }
