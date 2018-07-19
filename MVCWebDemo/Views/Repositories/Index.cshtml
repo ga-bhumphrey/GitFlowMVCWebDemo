@@ -1,0 +1,16 @@
+﻿@model MVCWebDemo.ViewModels.RepositoriesViewModel
+@{
+    ViewData["Title"] = "Repository List";
+}
+
+<h2>Repository List</h2>
+
+<div class="col-lg-12">
+    <ul>
+        @foreach (var item in Model.RepositoryList)
+        {
+            <li>@item.Name</li>
+        }
+    </ul>
+</div>
+
